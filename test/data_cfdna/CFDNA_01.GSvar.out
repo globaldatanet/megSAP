@@ -1,0 +1,73 @@
+##ANALYSISTYPE=CFDNA
+##PIPELINE=megSAP 0.2-380-gb575f87
+##GENOME_BUILD=GRCh38
+##CREATION_DATE=2021-11-11
+##FILTER=Clustered_Variant=Clustered variants
+##FILTER=Error=Alternative counts inside the expected error rate distribution
+##FILTER=FDR=no description available
+##FILTER=Fisher_Strand=Strand bias based on fisher test
+##FILTER=LC_Downstream=Low complexity region (5bps) downstream. ≥ 80% of bases show the same nucleotide  or tandem of ≥ 3 equal nucleotides in a row
+##FILTER=LC_Upstream=Low complexity region (5bps) upstream. ≥ 80% of bases show the same nucleotide or tandem of ≥ 3 equal nucleotides in a row
+##FILTER=Low_AC=Less than defined minimum of alternative counts
+##FILTER=low_conf_region=Variant marked as 'low_conf_region'.
+##FILTER=Low_COV=Low coverage
+##FILTER=Low_qual_pos=Position enriched with too many low quality bases
+##FILTER=off-target=Variant marked as 'off-target'.
+##FILTER=PASS=Passed filter
+##FILTER=Strand_imbalanced=All alternative reads found in only one strand
+##FILTER=Variant_contamination=Reads supporting other alleles outside of the error rate distribution
+##SAMPLE=<ID=CFDNA_01,IsTumor=yes,IsFFPE=no>
+##DESCRIPTION=filter=Annotations for filtering and ranking variants.
+##DESCRIPTION=quality=Quality parameters - variant quality (QUAL), depth (DP), allele frequency (AF), mean mapping quality of alternate allele (MQM), probability of strand bias for alternate bases as phred score (SAP), probability of allele ballance as phred score (ABP)
+##DESCRIPTION=gene=Affected gene list (comma-separated).
+##DESCRIPTION=variant_type=Variant type.
+##DESCRIPTION=coding_and_splicing=Coding and splicing details (Gene, ENST number, type, impact, exon/intron number, HGVS.c, HGVS.p, Pfam domain).
+##DESCRIPTION=coding_and_splicing_refseq=Coding and splicing details based on RefSeq (Gene, RefSeq id, type, impact, exon/intron number, HGVS.c, HGVS.p, Pfam domain).
+##DESCRIPTION=regulatory=Regulatory consequence details.
+##DESCRIPTION=OMIM=OMIM database annotation.
+##DESCRIPTION=ClinVar=ClinVar database annotation.
+##DESCRIPTION=HGMD=HGMD database annotation.
+##DESCRIPTION=RepeatMasker=RepeatMasker annotation.
+##DESCRIPTION=dbSNP=Identifier in dbSNP database.
+##DESCRIPTION=1000g=Allele frequency in 1000 genomes project.
+##DESCRIPTION=gnomAD=Allele frequency in gnomAD project.
+##DESCRIPTION=gnomAD_hom_hemi=Homoyzgous counts and hemizygous counts of gnomAD project (genome data).
+##DESCRIPTION=gnomAD_sub=Sub-population allele frequenciens (AFR,AMR,EAS,NFE,SAS) in gnomAD project.
+##DESCRIPTION=phyloP=phyloP (100way vertebrate) annotation. Deleterious threshold > 1.6.
+##DESCRIPTION=Sift=Sift effect prediction and score for each transcript: D=damaging, T=tolerated.
+##DESCRIPTION=PolyPhen=PolyPhen (humVar) effect prediction and score for each transcript: D=probably damaging, P=possibly damaging, B=benign.
+##DESCRIPTION=CADD=CADD pathogenicity prediction scores (scaled phred-like). Deleterious threshold > 10-20.
+##DESCRIPTION=REVEL=REVEL pathogenicity prediction score. Deleterious threshold > 0.5.
+##DESCRIPTION=MaxEntScan=MaxEntScan splicing prediction (reference bases score/alternate bases score).
+##DESCRIPTION=dbscSNV=dbscSNV splicing prediction (ADA/RF score).
+##DESCRIPTION=COSMIC=COSMIC somatic variant database anntotation.
+##DESCRIPTION=MMSplice_DeltaLogitPSI=MMsplice delta Logit PSI score: variant's effect on the exon inclusion - positive score shows higher exon inclusion, negative higher exclusion rate. A score greater than 2 or less than -2 can be considered strong.
+##DESCRIPTION=MMSplice_pathogenicity=MMsplice pathogenicity score: probability of pathogenic effect of the variant on splicing
+##DESCRIPTION=SpliceAI=SpliceAI prediction of splice-site variations. Probability of the variant being splice-altering (range from 0-1). The score is the maximum value of acceptor/donor gain/loss of all effected genes.
+##DESCRIPTION=NGSD_som_c=Somatic variant count in the NGSD.
+##DESCRIPTION=NGSD_som_p=Project names of project containing this somatic variant in the NGSD.
+##DESCRIPTION=NGSD_som_vicc_interpretation=Somatic variant interpretation according VICC standard in the NGSD.
+##DESCRIPTION=NGSD_som_vicc_comment=Somatic VICC interpretation comment in the NGSD.
+##DESCRIPTION=NGSD_hom=Homozygous variant count in NGSD.
+##DESCRIPTION=NGSD_het=Heterozygous variant count in NGSD.
+##DESCRIPTION=NGSD_group=Homozygous / heterozygous variant count in NGSD with the same disease group.
+##DESCRIPTION=classification=Classification from the NGSD.
+##DESCRIPTION=classification_comment=Classification comment from the NGSD.
+##DESCRIPTION=validation=Validation information from the NGSD. Validation results of other samples are listed in brackets!
+##DESCRIPTION=comment=Variant comments from the NGSD.
+##DESCRIPTION=gene_info=Gene information from NGSD (inheritance mode, gnomAD o/e scores).
+##FILTER=low_conf_region=Low confidence region for small variant calling based on gnomAD AC0/RF filters and IMGAG trio/twin data.
+##DESCRIPTION=tumor_af=Mutant allele frequency in tumor (Sample CFDNA_01).
+##DESCRIPTION=tumor_dp=Tumor Depth (Sample CFDNA_01).
+##DESCRIPTION=p-value=Uncorrected p-value
+##DESCRIPTION=m_AF=Multi-UMI alternative allele fraction
+##DESCRIPTION=m_REF=Multi-UMI reference-like read counts
+##DESCRIPTION=m_ALT=Multi-UMI alternative read counts
+##DESCRIPTION=Strand=Alleles in strands: Alternative forward, Alternative reverse, Reference forward, Reference reverse
+##DESCRIPTION=Sequence context=Sequence +/- 5bp around the variant.
+##DESCRIPTION=Homopolymer=Indicates if variant is in a homopolymer region.
+##DESCRIPTION=somatic_classification_comment=Somatic classification comment from the NGSD.
+##DESCRIPTION=somatic_classification=Somatic classification from the NGSD.
+#chr	start	end	ref	obs	tumor_af	tumor_dp	p-value	Alt counts	m_AF	m_REF	m_ALT	Strand	Sequence context	Homopolymer	filter	quality	gene	variant_type	coding_and_splicing	coding_and_splicing_refseq	regulatory	OMIM	ClinVar	HGMD	RepeatMasker	dbSNP	1000g	gnomAD	gnomAD_hom_hemi	gnomAD_sub	phyloP	Sift	PolyPhen	CADD	REVEL	MaxEntScan	dbscSNV	COSMIC	MMSplice_DeltaLogitPSI	MMSplice_pathogenicity	SpliceAI	NGSD_som_c	NGSD_som_p	NGSD_som_vicc_interpretation	NGSD_som_vicc_comment	NGSD_hom	NGSD_het	NGSD_group	classification	classification_comment	somatic_classification	somatic_classification_comment	validation	comment	gene_info
+chr1	114713909	114713909	G	T	0.0104	4238	1.94e-04	44	0.00875	2491	22	28-16-3034-1160	TTCTTGTCCAG	false		QUAL=0	NRAS	missense	NRAS:ENST00000369535.5:missense_variant:MODERATE:exon3/7:c.181C>A:p.Gln61Lys:PF00071 [Ras family]	NRAS:NM_002524.5:missense_variant:MODERATE:exon3/7:c.181C>A:p.Gln61Lys:		164790_[GENE=NRAS_PHENOS=Noonan syndrome 6, 613224 (3), Autosomal dominant; ?RAS-associated autoimmune lymphoproliferative syndrome type IV, somatic, 614470 (3); Melanocytic nevus syndrome, congenital, somatic, 137550 (3); Epidermal nevus, somatic, 162900 (3); Schimmelpenning-Feuerstein-Mims syndrome, somatic mosaic, 163200 (3); Thyroid carcinoma, follicular, somatic, 188470 (3); Neurocutaneous melanosis, somatic, 249400 (3); Colorectal cancer, somatic, 114500 (3)]	73058 [likely pathogenic(replaced by megSAP based on classifications:1x3,1x5) DISEASE=Vascular Tumors Including Pyogenic Granuloma,Hepatocellular carcinoma,Acute myeloid leukemia,Melanoma,Adrenocortical carcinoma,Neuroblastoma,Chronic lymphocytic leukemia,Large congenital melanocytic nevus,Transitional cell carcinoma of the bladder,Multiple myeloma,Renal cell carcinoma, papillary, 1,Malignant melanoma of skin,Lung adenocarcinoma,Non-small cell lung cancer,Neoplasm of brain,Nasopharyngeal Neoplasms,Neoplasm of the large intestine,Adenocarcinoma of stomach,Ovarian Serous Cystadenocarcinoma,Neurocutaneous melanocytosis,Glioblastoma,Rasopathy,Malignant neoplasm of body of uterus,Ras Inhibitor response,not provided];			rs121913254		0.0000		0.0000,0.0000,0.0000,0.0000,0.0000	9.8650	D(0.01)	P(0.71)	26.40	0.84			COSV54736310,COSV54743343,COSV54752117	-0.0253	0.2994	0	38	SomaticAndTreatment	ONCOGENIC		0	0	0 / 0			activating	[activating] ahwittd1 08.04.2020  Hospotmutation.			NRAS (inh=AD oe_syn=1.00 oe_mis=0.53 oe_lof=0.19), CSDE1 (inh=n/a oe_syn=0.96 oe_mis=0.55 oe_lof=0.05)
+chr1	114713915	114713915	C	T	0.0097	4430	6.27e-03	43	0.01130	2537	29	14-29-3215-1170	TCCAGCTGTAT	false	FDR	QUAL=0	NRAS	missense	NRAS:ENST00000369535.5:missense_variant:MODERATE:exon3/7:c.175G>A:p.Ala59Thr:PF00071 [Ras family]	NRAS:NM_002524.5:missense_variant:MODERATE:exon3/7:c.175G>A:p.Ala59Thr:		164790_[GENE=NRAS_PHENOS=Noonan syndrome 6, 613224 (3), Autosomal dominant; ?RAS-associated autoimmune lymphoproliferative syndrome type IV, somatic, 614470 (3); Melanocytic nevus syndrome, congenital, somatic, 137550 (3); Epidermal nevus, somatic, 162900 (3); Schimmelpenning-Feuerstein-Mims syndrome, somatic mosaic, 163200 (3); Thyroid carcinoma, follicular, somatic, 188470 (3); Neurocutaneous melanosis, somatic, 249400 (3); Colorectal cancer, somatic, 114500 (3)]	40473 [likely pathogenic DISEASE=not provided];			rs730880965					7.8010	T(0.07)	P(0.69)	24.30	0.87			COSV54743124,COSV54743482	0.0053	0.3008	0.01	0				0	0	0 / 0							NRAS (inh=AD oe_syn=1.00 oe_mis=0.53 oe_lof=0.19), CSDE1 (inh=n/a oe_syn=0.96 oe_mis=0.55 oe_lof=0.05)

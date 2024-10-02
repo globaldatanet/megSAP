@@ -1,0 +1,13 @@
+##fileformat=VCFv4.1
+##reference=/mnt/storage2/megSAP/data/genomes/GRCh38.fa
+##INFO=<ID=variant_id,Number=1,Type=String,Description="ID of original variant.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	Sample
+chr12	25215466	.	TC	AG	.	.	variant_id=chr12_25215466_25215468_TC_AG	GT	1/0
+chr12	25215465	.	T	A	.	.	variant_id=chr12_25215465_25215467_T_A	GT	1/0
+chr12	25215466	.	C	A	.	.	variant_id=chr12_25215466_25215468_C_A	GT	1/0
+chr12	25215465	.	T	TA	.	.	variant_id=chr12_25215465_25215467_-_A	GT	1/0
+chr12	25215466	.	T	TA	.	.	variant_id=chr12_25215466_25215468_-_A	GT	1/0
+chr12	25215464	.	TT	T	.	.	variant_id=chr12_25215465_25215467_T_-	GT	1/0
+chr12	25215465	.	TC	T	.	.	variant_id=chr12_25215466_25215468_C_-	GT	1/0
+chr12	25215465	.	TTC	T	.	.	variant_id=chr12_25215466_25215468_TC_-	GT	1/0

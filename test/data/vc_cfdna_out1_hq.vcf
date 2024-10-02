@@ -1,0 +1,40 @@
+##fileformat=VCFv4.1
+##source=umiVar2
+##INFO=<ID=Variant_Dist,Number=1,Type=Integer,Description="Distance to the closest short variant">
+##INFO=<ID=Upstream,Number=.,Type=String,Description="Upstream sequence (5 nucleotides)">
+##INFO=<ID=Downstream,Number=.,Type=String,Description="Downstream sequence (5 nucleotides)">
+##INFO=<ID=PValue,Number=.,Type=String,Description="Uncorrected p-value">
+##INFO=<ID=Variant_dist,Number=1,Type=String,Description="no description available">
+##INFO=<ID=Vicinity,Number=1,Type=String,Description="no description available">
+##FILTER=<ID=PASS,Description="Passed filter">
+##FILTER=<ID=Low_COV,Description="Low coverage">
+##FILTER=<ID=Strand_imbalanced,Description="All alternative reads found in only one strand">
+##FILTER=<ID=Low_AC,Description="Less than defined minimum of alternative counts">
+##FILTER=<ID=Clustered_Variant,Description="Clustered variants">
+##FILTER=<ID=LC_Upstream,Description="Low complexity region (5bps) upstream. ≥ 80% of bases show the same nucleotide or tandem of ≥ 3 equal nucleotides in a row">
+##FILTER=<ID=LC_Downstream,Description="Low complexity region (5bps) downstream. ≥ 80% of bases show the same nucleotide  or tandem of ≥ 3 equal nucleotides in a row">
+##FILTER=<ID=Error,Description="Alternative counts inside the expected error rate distribution">
+##FILTER=<ID=Fisher_Strand,Description="Strand bias based on fisher test">
+##FILTER=<ID=Low_qual_pos,Description="Position enriched with too many low quality bases">
+##FILTER=<ID=Variant_contamination,Description="Reads supporting other alleles outside of the error rate distribution">
+##FILTER=<ID=FDR,Description="no description available">
+##FILTER=<ID=No_Coverage,Description="No read coverage for this monitoring/ID variant in BAM file.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FORMAT=<ID=AC,Number=.,Type=Integer,Description="Allele read counts">
+##FORMAT=<ID=AF,Number=1,Type=Float,Description="Alternative allele fraction">
+##FORMAT=<ID=M_REF,Number=1,Type=Integer,Description="Multi-UMI reference-like read counts">
+##FORMAT=<ID=M_AC,Number=.,Type=Integer,Description="Multi-UMI alternative read counts">
+##FORMAT=<ID=M_AF,Number=1,Type=Float,Description="Multi-UMI alternative allele fraction">
+##FORMAT=<ID=Pval,Number=1,Type=Float,Description="P-value to belong to the error rate distribution (beta binomial distribution)">
+##FORMAT=<ID=FDR,Number=1,Type=Float,Description="Q-value to belong to the error rate distribution (beta binomial distribution) after Benjamini-Hochberg correction (FDR)">
+##FORMAT=<ID=Strand,Number=1,Type=String,Description="Alleles in strands: Alternative forward, Alternative reverse, Reference forward, Reference reverse">
+##FORMAT=<ID=FS,Number=1,Type=Float,Description="Fisher strand bias test (q-value)">
+##FORMAT=<ID=OAAC,Number=1,Type=Integer,Description="Other Alternative Allele Coun">
+##FORMAT=<ID=MAL,Number=1,Type=Float,Description="Multi-allele likelihoo">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	vc_cfdna_in1
+chr1	13828907	.	G	A	.	Clustered_Variant	Variant_dist=1;Vicinity=CACACGTACAG	GT:DP:AC:AF:M_REF:M_AC:M_AF:Pval:FDR:Strand:FS:OAAC:MAL	0/1:4198:3077:0.732968:736:2083:0.738915:0.00e+00:0.00e+00:1588-1489-531-590:1.00e+00:0:1.00e+00
+chr5	137297649	.	G	A	.	Clustered_Variant	Variant_dist=4;Vicinity=TCCTCGAGGAA	GT:DP:AC:AF:M_REF:M_AC:M_AF:Pval:FDR:Strand:FS:OAAC:MAL	./.:4163:866:0.208023:2303:601:0.206956:2.42e-45:1.29e-42:357-509-1665-1629:1.90e-03:3:1.00e+00
+chr5	137297656	.	A	T	.	FDR;Clustered_Variant	Variant_dist=4;Vicinity=GGAACAGGGTG	GT:DP:AC:AF:M_REF:M_AC:M_AF:Pval:FDR:Strand:FS:OAAC:MAL	./.:3458:5:0.001446:2421:1:0.000413:6.13e-02:1.00e+00:2-3-2051-1400:1.00e+00:2:1.00e+00
+chr7	150742412	.	C	T	.	PASS	Variant_dist=49;Vicinity=CAGGCCGATAC	GT:DP:AC:AF:M_REF:M_AC:M_AF:Pval:FDR:Strand:FS:OAAC:MAL	0/1:5074:2465:0.48581:1999:1890:0.485986:0.00e+00:0.00e+00:1141-1324-1340-1269:5.17e-01:0:1.00e+00
+chr11	47324594	.	G	A	.	PASS	Variant_dist=47;Vicinity=CGGCAGCACGA	GT:DP:AC:AF:M_REF:M_AC:M_AF:Pval:FDR:Strand:FS:OAAC:MAL	0/1:3550:1723:0.485352:1431:1342:0.483952:0.00e+00:0.00e+00:912-811-944-883:1.00e+00:0:1.00e+00
