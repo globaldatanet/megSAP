@@ -1,2 +1,5 @@
 .DS_Store
 logs
+s3.sh
+
+ssh -i "ec2-megsap-builder.pem" ec2-user@ec2-3-126-82-63.eu-central-1.compute.amazonaws.com
